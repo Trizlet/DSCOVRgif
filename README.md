@@ -1,8 +1,8 @@
 # DSCOVR-gif-tool
 
-A python tool to create gifs from imagery gathered by the EPIC instrument onboard the DSCOVR spacecraft.
+A python tool to create gifs of imagery gathered by the EPIC instrument onboard the DSCOVR spacecraft.
 
-Use -t/--type ['n', 'e', 'a','c'] to select natural, enhanced, aerosol, or cloud imagery.
+Use -t/--type ['n', 'e', 'a','c'] to select natural, enhanced, aerosol, or cloud imagery. (uses natural by default)
 
 
 | Natural                          | Enhanced                          | Cloud                                    | Aerosol |
