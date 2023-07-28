@@ -3,8 +3,11 @@
 A python tool to create gifs of imagery gathered by the EPIC instrument onboard the DSCOVR spacecraft.
 
 Use -t/--type ['n', 'e', 'a','c'] to select natural, enhanced, aerosol, or cloud imagery. (Natural by default)
+
 Use -nl/--noloop to disable gif looping. (Loops by default)
+
 Use -nr/--noremove to keep downloaded images after use (Deleted by default)
+
 Use -v/--verbose to see what images are being downloaded (Disabled by default)
 
 
