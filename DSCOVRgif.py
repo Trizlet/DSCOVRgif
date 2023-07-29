@@ -49,7 +49,7 @@ if not os.path.exists(folder + "/"):
 
 # get images
 print("Downloading images...")
-for x, item in enumerate(list):
+for x in range(len(list)):
     url = (
         "https://epic.gsfc.nasa.gov/archive/"+type+"/" 
         + list[x]["date"][:4]
