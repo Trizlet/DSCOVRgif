@@ -36,7 +36,7 @@ list = response.json()
 date = list[0]["date"][:10]
 
 # create folder
-folder = "./tempImages" # where to save images
+folder = os.path.dirname(os.path.realpath(__file__)) + "/tempImages" # where to save images
 if os.path.exists(folder + "/"):
     if input(folder+ " already exists! Would you like to write over it? this will delete the file! (y/n)\n").strip().lower() == "y":
         shutil.rmtree(folder)
@@ -67,7 +67,7 @@ for x, item in enumerate(list):
         + ".png"
     )
     if args.verbose:
-        print("saving " + output)
+        print("saving " + url)
     urllib.request.urlretrieve(url, output)
 
 gif = type + "_" + date + ".gif" # remove the _ and date from this if you just want them to come out as the same filename every day
@@ -82,12 +82,13 @@ for file_name in sorted(os.listdir(folder)):
 
 if not args.noloop:
     imageio.mimsave(
-    "./" + gif, images, loop = 0
+    os.path.dirname(os.path.realpath(__file__))+ "/" + gif, images, loop = 0
     )
 else:
     imageio.mimsave(
-        "./" + gif, images
+        os.path.dirname(os.path.realpath(__file__))+ "/" + gif, images
     )
 if not args.noremove:
     shutil.rmtree(folder) # removes image folder
-print(gif + " successfully created at " + os.getcwd())
+print(gif + " successfully created at " + os.path.dirname(os.path.realpath(__file__)))
+
