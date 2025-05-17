@@ -1,6 +1,6 @@
 # DSCOVR-gif-tool
 
-A simple Python tool to create animated GIFs from images taken by the EPIC instrument on the DSCOVR spacecraft.
+A Python tool to create animated GIFs from images taken by the EPIC instrument on the DSCOVR spacecraft.
 
 Run with `-h` or `--help` to see command options.
 
